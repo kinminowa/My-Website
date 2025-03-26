@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quinjoa's Handmade Jewelry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Unique Handmade Jewelry</h1>
+            <p>Crafted with love and precision, explore our exclusive collection.</p>
+            <a href="#shop" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+  
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We create handcrafted jewelry with a focus on sustainability and artistry. Each piece is uniquely designed and made to last.</p>
+    </section>
+
+    
+    <section id="shop" class="shop">
+        <h2>Shop Our Collection</h2>
+        <div class="product-gallery">
+            <div class="product-item">
+                <img src="necklace.jpg" alt="Handmade Necklace">
+                <p>Handmade Gold Necklace</p>
+                <p>$120</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="bracelet.jpg" alt="Handmade Bracelet">
+                <p>Silver Bangle Bracelet</p>
+                <p>$80</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="earings.jpg" alt="Handmade Earrings">
+                <p>Custom Earrings</p>
+                <p>$50</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+   
+    <footer>
+        <p>&copy; 2025 Quinjoa's Handmade Jewelry. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+/* Hero Section */
+.hero {
+    background-image: url('jewelry.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* Add a slight overlay for better text visibility */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Adjust for darker or lighter effect */
+}
+
+/* Ensure content is above the overlay */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #620f06;
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.hero .btn:hover {
+    background-color: #510d04;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2 {
+    color: #444;
+}
+
+button {
+    background-color: #6C5B7B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4f3b5f;
+}
+
+/* Navigation */
+header {
+    background-color: #2A2A2A;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('jewelry.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #6C5B7B;
+    padding: 12px 25px;
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #4f3b5f;
+}
+
+/* About Section */
+.about {
+    padding: 40px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Shop Section */
+.shop {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+}
+
+.shop .product-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.shop .product-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    width: 250px;
+    text-align: center;
+}
+
+.shop img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #3d0b0b;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #2A2A2A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
